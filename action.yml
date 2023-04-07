@@ -1,0 +1,16 @@
+name: 'Register All'
+description: 'Add all others in the parent directory to the local registry of Julia'
+inputs:
+  your-registry:  # id of input
+    description: 'Path to your local registry'
+    required: false
+    default: 'OkRegistry'
+
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        julia --project=${{ inputs.your-registry }} -e '
+          # TODO: nothing here
+          '
+      shell: bash
