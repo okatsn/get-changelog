@@ -5,6 +5,14 @@ inputs:
     description: 'Path to your local registry'
     required: false
     default: './'
+outputs: 
+  version:
+    description: 'The version in Project.toml'
+    value: ${{ steps.projinfo.outputs.version }}
+  content:
+    description: 'The content of the section matching that version'
+    value: ${{ join(steps.projinfo.outputs.*, '\n') }}
+
 
 runs:
   using: "composite"
