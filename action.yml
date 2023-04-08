@@ -52,3 +52,8 @@ branding:
 
 # This actions is created referring https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
 # Tag is required for it is able to be used.
+
+# KEYNOTE:
+# - If you echo variable of the same name to GITHUB_OUTPUT, the former will be overwrite by the latter. To preserve all, the variable name (e.g., `text` in echo "text=$line") must be different. See https://stackoverflow.com/questions/74137120/how-to-fix-or-avoid-error-unable-to-process-file-command-output-successfully
+# - For GITHUB_OUTPUT, see: https://stackoverflow.com/questions/59191913/how-do-i-get-the-output-of-a-specific-step-in-github-actions and https://docs.github.com/en/actions/using-jobs/defining-outputs-for-jobs
+# - For multi-line output, see https://trstringer.com/github-actions-multiline-strings/
