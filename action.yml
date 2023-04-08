@@ -38,3 +38,9 @@ runs:
         ')" >> $GITHUB_OUTPUT
       id: projinfo
       shell: bash
+branding:
+  icon: "package"
+  color: "gray"
+  version: "v1.0.0"  
+# This actions is created referring https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
+# Tag is required for it is able to be used.

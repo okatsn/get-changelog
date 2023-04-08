@@ -1,3 +1,3 @@
-# Register all
+# Get Changelog
 
-This action requires the same as [add-registry](https://github.com/okatsn/add-registry).
+Get the section in `changelog.md` from the directory of `Project.toml` matching the `version`.
