@@ -40,7 +40,7 @@ runs:
       shell: bash
 branding:
   icon: "package"
-  color: "gray"
-  version: "v1.0.0"  
+  color: "gray-dark"
+
 # This actions is created referring https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
 # Tag is required for it is able to be used.
